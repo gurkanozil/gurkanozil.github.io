@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# G.M. Özil's Portfolio Website
 
-## Getting Started
+A modern, responsive personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations powered by Framer Motion and custom styling.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Stack**: Built with Next.js 15.0 and TypeScript
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Animations**: Smooth page transitions and hover effects using Framer Motion
+- **Custom Styling**: Tailored design with custom color scheme and Geist font family
+- **Dark Mode**: Built-in dark mode support
+- **Optimized Images**: Next.js image optimization
+- **Automated Deployment**: GitHub Actions workflow for automatic deployment
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [GitHub Pages](https://pages.github.com/) - Hosting
+- [GitHub Actions](https://github.com/features/actions) - CI/CD
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/gurkanozil/gurkanozil.github.io.git
+   cd gurkanozil.github.io
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000) in your browser**
+
+## 📦 Project Structure
+
+```
+gurkanozil.github.io/
+├── src/
+│ ├── app/
+│ │ ├── layout.tsx # Root layout component
+│ │ ├── page.tsx # Home page component
+│ │ └── globals.css # Global styles
+│ └── ...
+├── public/
+│ └── headshot.png # Profile image
+├── .github/
+│ └── workflows/ # GitHub Actions workflows
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project includes several configuration files:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `next.config.ts` - Next.js configuration
+- `tailwind.config.ts` - Tailwind CSS customization
+- `tsconfig.json` - TypeScript configuration
+- `.eslintrc.json` - ESLint rules
 
-## Learn More
+## 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The site is automatically deployed to GitHub Pages using GitHub Actions. The workflow is triggered on push to the main branch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To deploy manually:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run deploy
+```
 
-## Deploy on Vercel
+## 🎨 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Colors
+The site uses a custom color scheme defined in the Tailwind configuration:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```typescript
+colors: {
+  'forest': {
+    500: '#2D5A27',
+    600: '#224420',
+  },
+}
+```
+
+### Fonts
+The site uses the Geist font family, with both sans-serif and monospace variants:
+- Geist Sans for general text
+- Geist Mono for code and monospaced text
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/gurkanozil/gurkanozil.github.io/issues).
+
+## 📞 Contact
+
+- LinkedIn: [gurkanozil](https://linkedin.com/in/gurkanozil)
+- GitHub: [@gurkanozil](https://github.com/gurkanozil)
+```
