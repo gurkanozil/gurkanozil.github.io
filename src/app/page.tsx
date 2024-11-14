@@ -17,7 +17,7 @@ export default function Home() {
           className="mb-8"
         >
           <Image
-            src="/placeholder-profile.jpg"
+            src="/headshot.png"
             alt="Profile"
             width={150}
             height={150}
