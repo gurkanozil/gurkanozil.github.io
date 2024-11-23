@@ -6,24 +6,10 @@ import Section from './components/Section';
 function App() {
   const projects = [
     {
-      title: "E-Commerce Dashboard",
-      description: "Full-stack dashboard with real-time analytics, inventory management, and sales tracking. Built with React, Node.js, and MongoDB.",
+      title: "Project one",
+      description: "My Project will be displayed here later",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
-      tags: ["React", "Node.js", "MongoDB", "Redux"],
-      link: "#"
-    },
-    {
-      title: "AI Content Generator",
-      description: "Web application that leverages OpenAI's GPT to generate and optimize content for marketing teams.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000",
-      tags: ["TypeScript", "Next.js", "OpenAI", "TailwindCSS"],
-      link: "#"
-    },
-    {
-      title: "Real Estate Platform",
-      description: "Modern property listing platform with virtual tours and interactive maps integration.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000",
-      tags: ["React", "Firebase", "Google Maps API"],
+      tags: ["None"],
       link: "#"
     }
   ];
@@ -37,13 +23,13 @@ function App() {
             <h1 className="text-5xl font-bold mb-6">G.M. Özil</h1>
             <p className="text-2xl text-emerald-200 mb-8">Full Stack Web Developer crafting exceptional digital experiences</p>
             <div className="flex space-x-4">
-              <a href="https://github.com" className="hover:text-emerald-300 transition-colors">
+              <a href="https://github.com/gurkanozil" className="hover:text-emerald-300 transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" className="hover:text-emerald-300 transition-colors">
+              <a href="https://linkedin.com/in/gurkanozil" className="hover:text-emerald-300 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:contact@example.com" className="hover:text-emerald-300 transition-colors">
+              <a href="mailto:gurkanozil@live.nl" className="hover:text-emerald-300 transition-colors">
                 <Mail size={24} />
               </a>
             </div>
@@ -88,7 +74,7 @@ function App() {
             I'm always interested in hearing about new projects and opportunities.
           </p>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:gurkanozil@live.nl"
             className="inline-flex items-center px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
           >
             <Mail className="mr-2" size={20} />
