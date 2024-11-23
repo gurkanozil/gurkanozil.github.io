@@ -87,7 +87,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-emerald-900 text-emerald-200 py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>© {new Date().getFullYear()} G.M. Özil. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} G.M. Özil.</p>
         </div>
       </footer>
     </div>
