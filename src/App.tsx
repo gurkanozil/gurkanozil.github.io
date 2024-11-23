@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Palette, Database, Rocket } from 'lucide-react';
+import { Github, Linkedin, Mail, Code2, Palette, Database } from 'lucide-react';
+/** import {ExternalLink, Rocket} from 'lucide-react'; */
 import ProjectCard from './components/ProjectCard';
 import Section from './components/Section';
 
