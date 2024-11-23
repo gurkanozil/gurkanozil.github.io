@@ -1,5 +1,5 @@
-/*import React from 'react';*/
-import { Linkedin, Mail, Code2, Palette, Database } from 'lucide-react';
+//import React from 'react';
+import { Linkedin, Mail, Code2, Palette, Database, LucideGithub } from 'lucide-react';
 /** import {ExternalLink, Rocket} from 'lucide-react'; */
 import ProjectCard from './components/ProjectCard';
 import Section from './components/Section';
@@ -25,7 +25,7 @@ function App() {
             <p className="text-2xl text-emerald-200 mb-8">Full Stack Web Developer crafting exceptional digital experiences</p>
             <div className="flex space-x-4">
               <a href="https://github.com/gurkanozil" className="hover:text-emerald-300 transition-colors">
-                <Github size={24} />
+                <LucideGithub size={24} />
               </a>
               <a href="https://linkedin.com/in/gurkanozil" className="hover:text-emerald-300 transition-colors">
                 <Linkedin size={24} />
