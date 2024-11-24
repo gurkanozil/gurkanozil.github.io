@@ -23,10 +23,10 @@ function App() {
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">G.M. Özil</h1>
             <p className="text-2xl text-emerald-200 mb-8">
-            Full Stack Developer | Software Engineer | Lifelong Learner | Focused on Building Scalable Solutions<br />
-            <br />With 5+ years of experience in software development, I work across the full stack using modern technologies like React, Node.JS and TypeScript.
-            <br />Driven by curiosity and a passion for creating impactful solutions, I aim to build scalable, high-quality applications.
-            <br />Fluent in English, Dutch, and Turkish, I’m dedicated to continuous learning and personal growth.
+            Full Stack Developer | Software Engineer | Lifelong Learner
+            <br />With 5+ years of experience, I specialize in building scalable web applications using React, TypeScript, and other modern technologies.
+            <br />Passionate about continuous learning and creating impactful solutions.
+            <br />Fluent in English, Dutch, and Turkish.
             </p>
             <div className="flex space-x-4">
               <a href="https://github.com/gurkanozil" className="hover:text-emerald-300 transition-colors">
