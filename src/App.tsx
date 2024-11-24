@@ -22,7 +22,12 @@ function App() {
         <div className="container mx-auto px-4 py-32">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">G.M. Özil</h1>
-            <p className="text-2xl text-emerald-200 mb-8">Full Stack Web Developer crafting exceptional digital experiences</p>
+            <p className="text-2xl text-emerald-200 mb-8">
+            Full Stack Developer | Software Engineer | Lifelong Learner | Focused on Building Scalable Solutions<br />
+            <br />With 5+ years of experience in software development, I work across the full stack using modern technologies like React, Node.JS and TypeScript.
+            <br />Driven by curiosity and a passion for creating impactful solutions, I aim to build scalable, high-quality applications.
+            <br />Fluent in English, Dutch, and Turkish, I’m dedicated to continuous learning and personal growth.
+            </p>
             <div className="flex space-x-4">
               <a href="https://github.com/gurkanozil" className="hover:text-emerald-300 transition-colors">
                 <LucideGithub size={24} />
