@@ -34,9 +34,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, ta
         </div>
         <a
           href={link}
-          className="inline-flex items-center text-emerald-600 hover:text-emerald-700 transition-colors"
-        >
-          View Project <ExternalLink className="ml-1" size={16} />
+          className="inline-flex items-center text-emerald-600 hover:text-emerald-700 transition-colors">
+          View Project On My Github <ExternalLink className="ml-1" size={16} />
         </a>
       </div>
     </div>
