@@ -1,0 +1,372 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Gürkan Mahmut Özil",
+    "label": "Full Stack Software Ontwikkelaar",
+    "image": "",
+    "email": "gurkanozil@live.nl",
+    "phone": "+31653361598",
+    "url": "",
+    "summary": "Full Stack Software Ontwikkelaar | Levenslange Leerder\n\nMet meer dan 5 jaar ervaring ben ik gespecialiseerd in het bouwen van schaalbare webapplicaties met React, TypeScript en andere moderne technologieën. Mijn passie voor programmeren is al sinds mijn 10e levensjaar aanwezig, en ik ben gedreven om doorlopend te leren en impactvolle oplossingen te creëren.\n\nMijn focus ligt altijd op het leveren van efficiënte en gebruiksvriendelijke oplossingen die zowel technisch robuust als klantgericht zijn.",
+    "location": {
+      "countryCode": "NL",
+      "address": "Veghel, Noord-Brabant"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "gurkanozil",
+        "url": "https://www.linkedin.com/in/gurkanozil/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "FrieslandCampina",
+      "position": "Allround Operator",
+      "startDate": "2024-12-31",
+      "endDate": "",
+      "highlights": [],
+      "summary": "Mijn ervaring als operator was een tussenstap terwijl ik mijn vaardigheden ontwikkelde voor een carrière als software developer",
+      "url": "https://www.linkedin.com/company/frieslandcampina/",
+      "location": "Veghel, North Brabant, Netherlands"
+    },
+    {
+      "name": "Coldservice",
+      "position": "Softwareontwikkelaar",
+      "startDate": "2023-12-31",
+      "endDate": "2024-12-31",
+      "highlights": [],
+      "summary": "Ik ontwikkelde een onderhoudsmanagementsysteem om onderhoud te loggen, inclusief tijdschema's, herinneringen en leverancierscontactinformatie. Het systeem verstuurde SMS-notificaties naar monteurs en managers, wat de planning en communicatie tussen productie en onderhoudsteam verbeterde. Dit resulteerde in soepelere processen en minder downtime.\n\nHet systeem gebruikte EAM voor het beheren van apparatuur en was beveiligd met authenticatie op een lokale server. Ik ontwikkelde de oplossing met C# .NET en beheerde de server op een Linux-systeem met Bash-scripts voor automatisering.\n\nDeze ervaring versterkte mijn probleemoplossend vermogen en technische vaardigheden in het ontwikkelen van efficiënte, klantgerichte systeemoplossingen.",
+      "url": "https://www.linkedin.com/company/coldservice/",
+      "location": "Veghel, North Brabant, Netherlands"
+    },
+    {
+      "name": "VerandaMaximaal",
+      "position": "Softwareontwikkelaar",
+      "startDate": "2022-12-31",
+      "endDate": "2023-12-31",
+      "highlights": [],
+      "summary": "Bij Veranda Maximaal ontwikkelde ik een B2B e-commerce website met authenticatie en zorgde ik voor de hosting en internationale webpagina’s. Ik werkte nauw samen met internationale klanten en ontwikkelde maatwerkwebsites, terwijl ik de IT-infrastructuur en servers beheerde om de prestaties te waarborgen. Mijn werkzaamheden omvatten het verbeteren van webapplicaties, SEO en het ontwikkelen van op maat gemaakte WordPress-plugins met PHP en JavaScript.\n\nDeze ervaring heeft mijn technische vaardigheden versterkt en mijn vermogen om klantgerichte oplossingen te leveren verder ontwikkeld. Ik ben gepassioneerd over het creëren van efficiënte, veilige en gebruiksvriendelijke online platformen.",
+      "url": "https://www.linkedin.com/company/verandamaximaal/",
+      "location": "Veghel, Noord-Brabant, Nederland"
+    },
+    {
+      "name": "Vindkracht13",
+      "position": "Softwareontwikkelaar",
+      "startDate": "2021-12-31",
+      "endDate": "2022-12-31",
+      "highlights": [],
+      "summary": "Bij Vindkracht13 heb ik het websitebeheerproces geoptimaliseerd door geautomatiseerde systemen te ontwikkelen die de klantbediening verbeterden en de workflow minimaliseerden. Dit omvatte zowel front-end als back-end verbeteringen, waaronder het maken van op maat gemaakte WordPress-plugins met PHP en JavaScript om specifieke functies te automatiseren. Deze oplossingen verbeterden de lead nurturing, waardoor we sneller op klantbehoeften konden inspelen.\n\nIk werkte nauw samen met externe teams om innovatieve technologieën te integreren en de klantbeleving te optimaliseren. Deze samenwerking stroomlijnde interne processen, versnelde de onboarding van nieuwe klanten en verbeterde de service voor bestaande klanten.\n\nDoor taken te automatiseren en op maat gemaakte plugins te ontwikkelen, verhoogde ik de klanttevredenheid en verlaagde ik de operationele kosten. Deze ervaring versterkte mijn focus op optimalisatie en continue verbetering, breidde mijn technische vaardigheden uit en versterkte mijn vermogen om te innoveren. Ik blijf me richten op het creëren van efficiënte, klantgerichte oplossingen.",
+      "url": "https://www.linkedin.com/company/vindkracht13/",
+      "location": "Veghel, Noord-Brabant, Nederland"
+    },
+    {
+      "name": "Vanderlande",
+      "position": "Softwareontwikkelaar",
+      "startDate": "2019-12-31",
+      "endDate": "2020-12-31",
+      "highlights": [],
+      "summary": "Bij Vanderlande BV ontwikkelde ik een geautomatiseerde softwareweergave die softwaredistributie en updates stroomlijnde door automatisch de nieuwste versies via een API op te halen, waardoor handmatige tussenkomst werd verminderd. Ik gebruikte JavaScript voor de front-end en PHP voor de back-end, en implementeerde authenticatie voor veilige toegang tot gegevens.\n\nSamen met software-ingenieurs en systeemarchitecten zorgde ik voor de integratie van de oplossing, die gebruiksvriendelijk, schaalbaar en afgestemd op bedrijfsdoelen was. Ik werkte binnen een Agile omgeving, met gebruik van Git, Bitbucket en Sourcetree voor versiebeheer.\n\nDeze ervaring heeft mijn technische vaardigheden in JavaScript, PHP, API-integratie en samenwerking versterkt, en verbeterde de softwarebeheerprocessen binnen het SCITS-team, wat de operationele efficiëntie verhoogde.",
+      "url": "https://www.linkedin.com/company/vanderlande/",
+      "location": "Veghel, Noord-Brabant, Nederland"
+    },
+    {
+      "name": "Sligro Food Group",
+      "position": "IT Support",
+      "startDate": "2018-01-31",
+      "endDate": "2018-06-30",
+      "highlights": [],
+      "summary": "Als stagiaire IT Support bij Sligro bood ik technische ondersteuning en implementeerde ik oplossingen voor diverse IT-vraagstukken. Ik verkreeg waardevolle inzichten in gebruikersbehoeften en de functionaliteiten van software, wat me in staat stelde om gerichte en effectieve oplossingen te bieden.\n\nDankzij de persoonlijke begeleiding van ervaren collega's leerde ik snel te reageren op de wensen van gebruikers en effectief te communiceren in verschillende situaties. Deze ervaring versterkte mijn technische vaardigheden en vergrootte mijn passie voor IT, terwijl ik mijn probleemoplossend vermogen verder ontwikkelde.",
+      "url": "https://www.linkedin.com/company/sligro-food-group/",
+      "location": "Veghel, North Brabant, Netherlands"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "LOI",
+      "area": "JavaScript",
+      "studyType": "HBO-Programma",
+      "startDate": "2024-12-31",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Koning Willem I College",
+      "area": "Software Development",
+      "studyType": "MBO 4",
+      "startDate": "",
+      "endDate": "",
+      "score": "Zeven",
+      "courses": []
+    },
+    {
+      "institution": "Fioretti College",
+      "area": "ICT",
+      "studyType": "VMBO-Theoretisch (MAVO)",
+      "startDate": "",
+      "endDate": "",
+      "score": "Zeven",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Heftruck Certificaat",
+      "issuer": "BLOM opleidingen ",
+      "endDate": "2029-01-31",
+      "startDate": "2024-01-31"
+    },
+    {
+      "name": "B-VCA",
+      "issuer": "Koninklijke PBNA",
+      "endDate": "2033-12-31",
+      "startDate": "2023-12-31",
+      "url": "https://www.vca-uitslag.nl/!/1443839.05650254"
+    },
+    {
+      "name": "NEN 3140",
+      "issuer": "ROVC Technische Opleidingen",
+      "endDate": "2026-06-30",
+      "startDate": "2023-06-30"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": ".NET",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MicroPython",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Internet of Things (IoT)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Vite",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience Design (UED)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Elektrische veiligheid",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Webapplicaties",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Optimalisering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technische ondersteuning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Workplace Safety",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Industrial Safety",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Forklift Operation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Back-End Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C#",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Servers",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "E-commerce SEO",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Jira",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "WordPress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Automation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Machine Operation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "nl",
+      "fluency": "Native Speaker"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Dutch"
+    },
+    {
+      "fluency": "Full Professional",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Turkish"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Badger2040 Operating Systeem",
+      "startDate": "2024-11-30",
+      "summary": "Het Badger2040 Operating System is een project dat ik heb ontwikkeld voor de Badger2040, een microcontroller met een e-ink display, gebaseerd op de RP2040 microchip. Het besturingssysteem, GM_OS, is geschreven in MicroPython en bevat verschillende op maat gemaakte applicaties.\n\nDe belangrijkste toepassingen in dit project zijn:\n\nDraw: Een applicatie waarmee gebruikers tekeningen kunnen maken en manipuleren op het e-ink display.\nScreenshot: Een handige tool waarmee de huidige weergave op het scherm kan worden vastgelegd en opgeslagen voor later gebruik.\nHet project is te vinden op mijn GitHub-pagina: https://github.com/gurkanozil/Badger2040, waar je de broncode kunt bekijken en de toepassingen kunt verkennen. Dit project toont mijn vaardigheden in embedded softwareontwikkeling en het werken met microcontrollers en e-ink displays.",
+      "url": null
+    },
+    {
+      "name": "Portfolio Website",
+      "startDate": "2024-11-30",
+      "summary": "Ik heb een portfolio-website ontwikkeld, te vinden op https://gurkanozil.github.io/, waarbij ik gebruik heb gemaakt van Vite, React.js en TypeScript. Deze technologieën stelden me in staat om een snelle, dynamische gebruikerservaring te creëren met een moderne en schaalbare frontend. Het project weerspiegelt mijn vaardigheden in webontwikkeling en mijn vermogen om gebruiksvriendelijke en efficiënte websites te bouwen. Het portfolio toont mijn technische expertise en biedt inzicht in de verschillende projecten die ik heb gerealiseerd.",
+      "url": null,
+      "endDate": "2024-11-30"
+    },
+    {
+      "name": "Onderhoudsmanagementsysteem bij Cold Service Veghel",
+      "startDate": "2023-12-31",
+      "summary": "In mijn rol ontwikkelde ik een onderhoudsmanagementsysteem om onderhoud te loggen, inclusief tijdschema's, herinneringen en contactinformatie van leveranciers. Het systeem was ontworpen om de efficiëntie van het onderhoudsproces te verbeteren door real-time communicatie tussen productie en monteurs mogelijk te maken. Door SMS-notificaties te sturen naar monteurs en managers konden onderhoudswerkzaamheden effectief worden gepland en uitgevoerd, wat resulteerde in soepelere processen en minder downtime.\n\nHet systeem maakte gebruik van Enterprise Asset Management (EAM) voor het beheren van alle apparatuur en werd geconfigureerd met authenticatie op een lokale server om de veiligheid en toegang te waarborgen. De integratie van notificaties via SMS en het loggen van onderhoudsactiviteiten verbeterde de communicatie tussen verschillende afdelingen, wat leidde tot snellere reactietijden en een beter overzicht van geplande onderhoudswerkzaamheden.\n\nVoor de ontwikkeling van dit systeem maakte ik gebruik van C# .NET en beheerde de serveromgeving op een Linux-systeem met Bash-scripts voor geautomatiseerde taken. Dit stelde mij in staat om een robuuste oplossing te bouwen die zowel functioneel als betrouwbaar was, en die gemakkelijk kon worden aangepast aan de veranderende behoeften van het bedrijf.\n\nDeze ervaring heeft mijn probleemoplossend vermogen versterkt en mijn technische vaardigheden in het ontwikkelen van systeemoplossingen verder uitgebreid. Het werkte als een waardevolle leerervaring in het omgaan met complexe uitdagingen, waarbij ik zowel mijn kennis van softwareontwikkeling als mijn vermogen om praktische, klantgerichte oplossingen te leveren verder ontwikkelde. Het onderhoudsmanagementsysteem verbeterde niet alleen de efficiëntie van de organisatie, maar versterkte ook mijn focus op continue verbetering en procesoptimalisatie.",
+      "url": null,
+      "endDate": "2024-12-31"
+    },
+    {
+      "name": "Webontwikkeling bij Veranda Maximaal",
+      "startDate": "2022-12-31",
+      "summary": "Bij Veranda Maximaal was ik verantwoordelijk voor de ontwikkeling van een vernieuwde B2B e-commerce website met authenticatie, waarbij ik een gebruiksvriendelijke en veilige interface ontwierp die de klantbeleving optimaliseerde. Naast het ontwikkelen van de websites, was ik ook verantwoordelijk voor het beheer van de hosting en de internationale webpagina's, waarmee ik zorgde voor een naadloze werking van de online platformen, ongeacht de locatie van de klanten.\n\nMijn werk omvatte de ontwikkeling van websites voor zowel Veranda Maximaal als haar klanten, waarbij ik nauw samenwerkte met internationale klanten om maatwerkoplossingen te bieden. Ik beheer de IT-infrastructuur en de servers om de prestaties en veiligheid van de websites te waarborgen, en was verantwoordelijk voor het optimaliseren van de technische aspecten van de e-commerce platforms. Dit omvatte onder andere het verbeteren van webapplicaties en het implementeren van SEO-strategieën, waardoor de online zichtbaarheid en prestaties aanzienlijk verbeterden.\n\nDaarnaast heb ik ervaring opgedaan in het ontwikkelen van op maat gemaakte WordPress-plugins met PHP en JavaScript, wat bijdroeg aan de efficiëntie en functionaliteit van de websites. Door deze technische verbeteringen kon ik niet alleen de gebruikservaring verbeteren, maar ook de algehele efficiëntie van de webapplicaties verhogen.\n\nDeze rol versterkte mijn technische vaardigheden en mijn vermogen om klantgerichte oplossingen te leveren. Het samenwerken met internationale klanten en het beheren van de IT-infrastructuur heeft mijn probleemoplossend vermogen vergroot en mijn kennis van het optimaliseren van e-commerce webapplicaties verder ontwikkeld. Ik blijf me inzetten voor het creëren van technisch geavanceerde en klantgerichte oplossingen.",
+      "url": null,
+      "endDate": "2023-12-31"
+    },
+    {
+      "name": "Optimalisatie Websitebeheer voor Vindkracht13",
+      "startDate": "2021-12-31",
+      "summary": "Bij Vindkracht13 heb ik het websitebeheerproces geoptimaliseerd door geautomatiseerde systemen te ontwikkelen die de klantbediening verbeterden en de workflow minimaliseerden. Dit omvatte zowel front-end als back-end optimalisatie, waarbij ik Wordpress-plugins heb gemaakt met PHP en JavaScript om specifieke functionaliteiten te automatiseren en te verbeteren. Deze technische oplossingen hebben niet alleen de efficiëntie verhoogd, maar ook de snelheid van de lead nurturing, waardoor we sneller en effectiever op klantbehoeften konden inspelen.\n\nDe samenwerking met externe teams speelde een sleutelrol in het vinden van innovatieve oplossingen en het integreren van de nieuwste technologieën in onze systemen. Door deze samenwerking konden we de klantbeleving optimaliseren en tegelijkertijd de interne werkprocessen stroomlijnen. Dit leidde tot een snellere onboarding van nieuwe klanten en een verbeterde ervaring voor bestaande klanten.\n\nDoor de automatisering van verschillende processen en de ontwikkeling van maatwerkplugins, konden we niet alleen de klanttevredenheid verhogen, maar ook de operationele kosten verlagen. Het minimaliseren van handmatige taken zorgde voor een efficiëntere workflow en meer ruimte voor strategische initiatieven.\n\nDeze ervaring heeft mijn passie voor optimalisatie en continue verbetering verder versterkt. Het heeft mijn technische vaardigheden uitgebreid, mijn vermogen om te innoveren versterkt en mijn inzicht in procesoptimalisatie verdiept. Ik ben trots op de impact die ik heb gehad en blijf streven naar het ontwikkelen van efficiënte, klantgerichte oplossingen.",
+      "url": null,
+      "endDate": "2022-12-31"
+    },
+    {
+      "name": "Geautomatiseerde Software Weergave voor Supply Center IT Solutions.",
+      "startDate": "2019-12-31",
+      "summary": "Bij Vanderlande BV was ik verantwoordelijk voor het ontwerp, de ontwikkeling en de implementatie van een geautomatiseerde softwareweergave die softwaredistributie en updates stroomlijnde. Door de nieuwste versies automatisch via een API op te halen, werd handmatige tussenkomst verminderd en had het team altijd toegang tot de meest actuele software.\n\nIk gebruikte JavaScript voor de front-end en PHP voor de back-end. Ik implementeerde een API-integratie om softwareversies automatisch te verkrijgen en updates te leveren, en zorgde voor de implementatie van authenticatie om gevoelige gegevens te beveiligen.\n\nSamen met software-ingenieurs en systeemarchitecten werkte ik aan de integratie van de oplossing, waarbij ik zowel technische als operationele vereisten in acht nam. De oplossing was gebruiksvriendelijk, schaalbaar en goed afgestemd op de bedrijfsdoelen.\n\nBelangrijkste verantwoordelijkheden:\n\nAutomatisering: Ontwikkeling van een softwareweergave in JavaScript en PHP voor automatische versie-updates via een API.\nIntegratie: Samenwerking met teams voor integratie, testen en probleemoplossing.\nAgile: Deelname aan Agile workflows (Scrum, stand-ups, sprintplanning).\nVersiebeheer: Gebruik van Git, Bitbucket en Sourcetree.\nContinue verbetering: Prestatiebeoordelingen en verbeteringen op basis van team- en organisatiebehoeften.\nDeze ervaring heeft mijn vaardigheden in JavaScript, PHP, API-integratie, en authenticatie versterkt en mijn vermogen om samen te werken en innovatieve oplossingen te creëren vergroot. Het project leidde tot aanzienlijke verbeteringen in de softwarebeheerprocessen binnen het SCITS-team, wat de operationele efficiëntie verhoogde.",
+      "url": null,
+      "endDate": "2020-12-31"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
