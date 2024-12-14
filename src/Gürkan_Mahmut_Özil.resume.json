@@ -1,0 +1,297 @@
+{
+  "basics": {
+    "name": "Gürkan Mahmut Özil",
+    "label": "Full Stack Software Developer",
+    "picture": "",
+    "email": "gurkanozil@live.nl",
+    "phone": "+31653361598",
+    "website": "",
+    "summary": "With over 5 years of experience, I specialize in building scalable web applications with React, TypeScript and other modern technologies. My passion for programming has been present since the age of 10, I am driven to continually learn and create impactful solutions.\n\nMy focus is always on delivering efficient and user-friendly solutions that are both technically robust and customer-centric.",
+    "location": {
+      "countryCode": "NL",
+      "address": "Veghel, Noord-Brabant"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "gurkanozil",
+        "url": "https://www.linkedin.com/in/gurkanozil/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "FrieslandCampina",
+      "endDate": "",
+      "highlights": [],
+      "position": "Operator",
+      "startDate": "2024-12-31",
+      "summary": "My experience as an operator was an intermediate step while I developed my skills for a career as a software developer",
+      "website": "https://www.linkedin.com/company/frieslandcampina/"
+    },
+    {
+      "company": "ColdService",
+      "endDate": "2024-12-31",
+      "highlights": [],
+      "position": "Software Developer",
+      "startDate": "2023-12-31",
+      "summary": "I developed a maintenance management system to log maintenance, including schedules, reminders, and vendor contact information. The system sent SMS notifications to mechanics and managers, which improved scheduling and communication between production and maintenance team. This resulted in smoother processes and less downtime.\n\nThe system used EAM to manage equipment and was secured with authentication on a local server. I developed the solution with C# .NET and managed the server on a Linux system using Bash scripts for automation.\n\nThis experience strengthened my problem-solving and technical skills in developing efficient, customer-focused system solutions.",
+      "website": "https://www.linkedin.com/company/coldservice/"
+    },
+    {
+      "company": "VerandaMaximaal",
+      "endDate": "2023-12-31",
+      "highlights": [],
+      "position": "Software Developer",
+      "startDate": "2022-12-31",
+      "summary": "At Veranda Maximum, I developed a B2B e-commerce website with authentication and provided hosting and international web pages. I worked closely with international clients and developed custom websites while managing IT infrastructure and servers to ensure performance. My work included enhancing web applications, SEO and developing custom WordPress plugins with PHP and JavaScript.\n\nThis experience has strengthened my technical skills and further developed my ability to deliver customer-focused solutions. I am passionate about creating efficient, secure and user-friendly online platforms.",
+      "website": "https://www.linkedin.com/company/verandamaximaal/"
+    },
+    {
+      "company": "Vindkracht13",
+      "endDate": "2022-12-31",
+      "highlights": [],
+      "position": "Software Developer",
+      "startDate": "2021-12-31",
+      "summary": "At Vindkracht13, I optimized the website management process by developing automated systems that improved customer service and minimized workflow. This included both front-end and back-end improvements, including creating custom WordPress plugins with PHP and JavaScript to automate specific functions. These solutions improved lead nurturing, allowing us to respond faster to customer needs, and I worked closely with external teams to integrate innovative technologies and optimize the customer experience.\n\nThis collaboration streamlined internal processes, accelerated new customer onboarding and improved service for existing customers. By automating tasks and developing customized plugins, I increased customer satisfaction and reduced operational costs.\n\nThis experience reinforced my focus on optimization and continuous improvement, expanded my technical skills and strengthened my ability to innovate. I remain focused on creating efficient, customer-focused solutions.",
+      "website": "https://www.linkedin.com/company/vindkracht13/"
+    },
+    {
+      "company": "Vanderlande Industries",
+      "endDate": "2020-12-31",
+      "highlights": [],
+      "position": "Software Developer",
+      "startDate": "2019-12-31",
+      "summary": "At Vanderlande Industries, I developed an automated software view that streamlined software distribution and updates by automatically retrieving the latest versions via an API, reducing manual intervention. I used JavaScript for the front-end and PHP for the back-end, and implemented authentication for secure access to data. Working with software engineers and system architects, I ensured the integration of the solution was user-friendly, scalable, and aligned with business goals.\n\nI worked within an Agile environment, using Git, Bitbucket and Sourcetree for version control. This experience enhanced my technical skills in JavaScript, PHP, API integration and collaboration, and improved the software management processes within the SCITS team, increasing operational efficiency.",
+      "website": "https://www.linkedin.com/company/vanderlande/"
+    },
+    {
+      "company": "Sligro Food Group",
+      "endDate": "2018-06-30",
+      "highlights": [],
+      "position": "IT Support",
+      "startDate": "2018-01-31",
+      "summary": "As an IT Support intern at Sligro, I provided technical support and implemented solutions to various IT issues. I gained valuable insights into user needs and the functionalities of software, which enabled me to provide targeted and effective solutions. Thanks to the personal guidance of experienced colleagues, I learned to respond quickly to user needs and communicate effectively in different situations.\n\nThis experience strengthened my technical skills and increased my passion for IT, while further developing my problem-solving abilities.",
+      "website": "https://www.linkedin.com/company/sligro-food-group/"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "LOI",
+      "area": "JavaScript",
+      "studyType": "Bachelors-Program",
+      "startDate": "2024-12-31",
+      "endDate": "",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "King Willem I College",
+      "area": "Software Development",
+      "studyType": "Trade School (MBO) Level 4",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "Seven",
+      "courses": []
+    },
+    {
+      "institution": "Fioretti College",
+      "area": "IT",
+      "studyType": "VMBO-Theoretical (MAVO)",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "Seven",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": ".NET",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MicroPython",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Internet of Things (IoT)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Vite",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience Design (UED)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Elektrische veiligheid",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Webapplicaties",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Optimalisering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technische ondersteuning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Workplace Safety",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Industrial Safety",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Forklift Operation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Back-End Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C#",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Servers",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "E-commerce SEO",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Jira",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "WordPress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Automation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Machine Operation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "nl",
+      "fluency": "Native Speaker"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Dutch"
+    },
+    {
+      "fluency": "Full Professional",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Turkish"
+    }
+  ],
+  "interests": [],
+  "references": []
+}

@@ -3,9 +3,10 @@ import { Linkedin, Mail, Code2, Palette, Database, Github } from 'lucide-react';
 //import {ExternalLink, Rocket} from 'lucide-react';
 import ProjectCard from './components/ProjectCard';
 import Section from './components/Section';
+import resume from './Gürkan_Mahmut_Özil.resume.json';
 
 function App() {
-  const projects = [
+  const projectsOld = [
     {
       title: "Tire Inventory",
       description: "With user authentication, an inventory webapp to keep track of tires. Visitable at https://gurkanozil.github.io/tire-inventory/",
@@ -28,6 +29,7 @@ function App() {
       link: "https://github.com/gurkanozil/Badger2040",
     }
   ];
+  const projectsNew = [resume.projects]; // Use the projects from the JSON data
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -35,15 +37,11 @@ function App() {
       <div className="bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-900 text-white">
         <div className="container mx-auto px-4 py-32">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">G.M. Özil</h1>
+            <h1 className="text-5xl font-bold mb-6">{resume.basics.name}</h1>
             <p className="text-2xl text-emerald-200 mb-8">
-              Full Stack Developer | Software Engineer | Lifelong Learner
+              {resume.basics.label}
               <br />
-              With 5+ years of experience, I specialize in building scalable web applications using React, TypeScript, and other modern technologies.
-              <br />
-              Passionate about continuous learning and creating impactful solutions.
-              <br />
-              Fluent in English, Dutch, and Turkish.
+              {resume.basics.summary}
             </p>
             <div className="flex space-x-4">
               <a href="https://github.com/gurkanozil" className="hover:text-emerald-300 transition-colors">
@@ -84,7 +82,7 @@ function App() {
       {/* Projects Section */}
       <Section title="Featured Projects" className="bg-gray-50">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projectsOld.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
