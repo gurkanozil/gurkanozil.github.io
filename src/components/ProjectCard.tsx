@@ -1,45 +1,82 @@
-import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Github, ExternalLink } from "lucide-react";
+import { Project } from "../types";
 
 interface ProjectCardProps {
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
-  link: string;
+  project: Project;
+  index: number;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, tags, link }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-      <div className="relative h-48 overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-xl"
+    >
+      {project.image && (
         <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+          src={project.image}
+          alt={project.title}
+          className="w-full max-h-48 object-cover transition-transform hover:scale-105 duration-300"
         />
-      </div>
+      )}
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
+        {project.liveLink ? (
+          <a
+            href={project.liveLink}
+            className="text-xl font-bold mb-2 text-gray-900 dark:text-white"
+          >
+            {project.title}
+          </a>
+        ) : (
+          <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
+            {project.title}
+          </h3>
+        )}
+        <p className="text-gray-600 dark:text-gray-300 mb-4">
+          {project.description}
+        </p>
         <div className="flex flex-wrap gap-2 mb-4">
-          {tags.map((tag, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-sm"
-            >
-              {tag}
-            </span>
-          ))}
+          {project.technologies &&
+            project.technologies.length > 0 &&
+            project.technologies.map((tech) => (
+              <span
+                key={tech}
+                className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm text-gray-700 dark:text-gray-300"
+              >
+                {tech}
+              </span>
+            ))}
         </div>
-        <a
-          href={link}
-          className="inline-flex items-center text-emerald-600 hover:text-emerald-700 transition-colors">
-          View Project On My Github <ExternalLink className="ml-1" size={16} />
-        </a>
-      </div>
-    </div>
-  );
-}
 
-export default ProjectCard;
+        <div className="flex gap-2">
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              <Github className="w-5 h-5" />
+              View on GitHub
+            </a>
+          )}
+          {project.liveLink && (
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              <ExternalLink className="w-5 h-5" />
+              View Live
+            </a>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  );
+};
