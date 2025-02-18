@@ -1,6 +1,6 @@
-import React from 'react';
-import { Moon, Sun } from 'lucide-react';
-import { useTheme } from '../hooks/useTheme';
+import React from "react";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "../hooks/useTheme";
 
 export const ThemeToggle: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -12,14 +12,20 @@ export const ThemeToggle: React.FC = () => {
       aria-label="Toggle theme"
     >
       <div className="relative w-full h-full">
-        <Sun 
+        <Sun
           className={`absolute inset-0 transform transition-all duration-200 
-            ${theme === 'dark' ? 'rotate-0 opacity-100' : 'rotate-90 opacity-0'} 
+            ${
+              theme === "dark" ? "rotate-0 opacity-100" : "rotate-90 opacity-0"
+            } 
             text-slate-300`}
         />
-        <Moon 
+        <Moon
           className={`absolute inset-0 transform transition-all duration-200 
-            ${theme === 'light' ? 'rotate-0 opacity-100' : '-rotate-90 opacity-0'} 
+            ${
+              theme === "light"
+                ? "rotate-0 opacity-100"
+                : "-rotate-90 opacity-0"
+            } 
             text-slate-700`}
         />
       </div>

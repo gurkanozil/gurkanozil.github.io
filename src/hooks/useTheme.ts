@@ -1,20 +1,42 @@
-import { useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
+type Theme = "light" | "dark";
 
-export const useTheme = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
+interface ThemeContextType {
+  theme: Theme;
+  toggleTheme: () => void;
+}
+
+// Create the context
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+
+// Create the provider component
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const [theme, setTheme] = useState<Theme>(() => {
+    // Check localStorage first
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light" || savedTheme === "dark") {
+      return savedTheme as Theme;
+    }
+    // If no saved theme, check system preference
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  });
 
   useEffect(() => {
+    console.log("Theme changed to:", theme); // Debug log
     const root = window.document.documentElement;
     root.classList.remove("light", "dark");
-
-    // Add a transitioning class
     root.classList.add("theme-transitioning");
     root.classList.add(theme);
 
-    // Remove the transitioning class after the animation completes
+    // Save theme to localStorage
+    localStorage.setItem("theme", theme);
+
     const timeout = setTimeout(() => {
       root.classList.remove("theme-transitioning");
-    }, 200); // Match this duration with your CSS transition
+    }, 200);
 
     return () => clearTimeout(timeout);
   }, [theme]);
@@ -23,5 +45,18 @@ export const useTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
-  return { theme, toggleTheme };
-};
+  return React.createElement(ThemeContext.Provider, 
+    { value: { theme, toggleTheme } },
+    children
+  );
+}
+// 
+
+// Create the hook
+export function useTheme() {
+  const context = useContext(ThemeContext);
+  if (context === undefined) {
+    throw new Error("useTheme must be used within a ThemeProvider");
+  }
+  return context;
+}

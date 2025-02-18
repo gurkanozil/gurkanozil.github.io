@@ -1,4 +1,6 @@
+import { useTheme } from "./hooks/useTheme";
 import { Sparkles } from "./components/Sparkles";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { ThemeToggle } from "./components/ThemeToggle";
@@ -9,21 +11,22 @@ import Footer from "./components/Footer";
 import headsign from "./images/headsign_green.png";
 
 function App() {
+  const { theme } = useTheme();
+
+  useEffect(() => {}, [theme]);
+
   const scrollToProjects = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
-        <Sparkles
-        className="absolute inset-0"
-        color="#ffffff"
-        background="transparent"
-        size={3}
-        density={50}
-        speed={1}
-        opacity={0.8}
-      />
+      {theme === "dark" ? (
+        <Sparkles className="absolute inset-0 opacity-50" color="#FFFFFF" />
+      ) : (
+        <Sparkles className="absolute inset-0" color="#000000" />
+      )}
+
       <ThemeToggle />
       {/* Hero Section */}
       <section className="min-h-screen shadow-2xl flex flex-col items-center justify-center px-4">
@@ -37,7 +40,7 @@ function App() {
             <img
               src={headsign}
               alt="Profile"
-              className="rounded-full w-full h-full object-cover border-2 border-emerald-400 dark:border-emerald-500"
+              className="rounded-full w-full h-full object-cover border-2 border-emerald-400 dark:border-emerald-600"
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">

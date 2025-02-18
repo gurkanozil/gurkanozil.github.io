@@ -22,9 +22,9 @@ interface SparklesProps {
 
 export function Sparkles({
   className,
-  size = 1,
+  size = 2,
   minSize = null,
-  density = 800,
+  density = 250,
   speed = 1,
   minSpeed = null,
   opacity = 1,
@@ -70,7 +70,7 @@ export function Sparkles({
         direction: "none" as const,
         random: true,
         speed: {
-          min: minSpeed || speed / 2,
+          min: minSpeed ?? speed / 2,
           max: speed,
         },
         straight: false,
@@ -84,7 +84,7 @@ export function Sparkles({
       },
       opacity: {
         value: {
-          min: minOpacity || opacity / 2,
+          min: minOpacity ?? opacity / 2,
           max: opacity,
         },
         animation: {
@@ -95,7 +95,7 @@ export function Sparkles({
       },
       size: {
         value: {
-          min: minSize || size / 2,
+          min: minSize ?? size / 2,
           max: size,
         },
       },
