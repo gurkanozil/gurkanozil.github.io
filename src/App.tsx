@@ -47,11 +47,16 @@ function App() {
             Gürkan Mahmut Özil
           </h1>
           <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-200 mb-2">
-            Full Stack Developer
+            Full Stack Web Developer
+          </p>
+          <p className="md:text-lg text-gray-700 dark:text-gray-200 mb-4">
+            Proficiency in TypeScript, PHP and more, with or without frameworks.
           </p>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-8">
             Welcome to my portfolio! <br />
-            I've been programming since 10 years old. <br />
+            Passion for programming since 10 y/o. <br />
+            5 years of professional experience. <br />
+            Created solutions for diverse businesses, from e-commerce platforms to custom internal software that drives efficiency. <br />
             Scroll down to learn more or contact me through one of these!
           </p>
           <div className="flex justify-center gap-10 md:gap-16 mb-12">

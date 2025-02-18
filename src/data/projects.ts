@@ -1,4 +1,5 @@
 import { Project } from "../types";
+import resume from "../../cv.pdf";
 
 import RanaKaya from "../images/ranakaya_portfolio.png";
 import badger_os from "../images/badger_os.png";
@@ -11,22 +12,20 @@ import tire_inventory from "../images/tire_inventory.png";
 // github: "url", // optional
 // liveLink: "url", // optional
 // technologies: ["array", "with", "tech"], // optional
-// image: "url"
+// image: "url" // optional
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Portfolio",
+    title: "Digital Designer Portfolio",
     description:
-      "This website was designed by Rana Kaya in Figma and developed by me using Vite, React.js and TailwindCSS.",
+      "This website was designed by Rana Kaya in Figma and developed by me using React.js and TailwindCSS.",
     github: "https://github.com/gurkanozil/ranakaya",
     liveLink: "https://ranakaya.vercel.app/",
     technologies: [
       "Figma",
       "React",
       "TailwindCSS",
-      "Vercel",
-      "Netlify",
       "Vite",
     ],
     image: RanaKaya,
@@ -54,10 +53,24 @@ export const projects: Project[] = [
     id: 4,
     title: "Tire inventory",
     description:
-      "With user authentication, an inventory webapp to keep track of tires.",
+      "With user authentication, a basic database inventory webApp to keep track of tires.",
     github: "https://github.com/gurkanozil/tire-inventory",
     liveLink: "https://gurkanozil.github.io/tire-inventory",
     technologies: ["Vite", "React", "Typescript", "FireBase / FireStore"],
     image: tire_inventory,
+  },
+  {
+    id: 5,
+    title: "Want to see more?",
+    description:
+      "Not all of my projects are shared online or finished. \n Contact me if you want to learn more or if you have something in mind!",
+    technologies: [
+      "TypeScript",
+      "JavaScript",
+      "PHP",
+      "And more",
+      "(With or without frameworks)",
+    ],
+    resume: resume,
   },
 ];

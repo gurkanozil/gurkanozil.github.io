@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Files } from "lucide-react";
 import { Project } from "../types";
 
 interface ProjectCardProps {
@@ -52,7 +52,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             ))}
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex gap-3 m-3 text-xl md:text-lg">
           {project.github && (
             <a
               href={project.github}
@@ -73,6 +73,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             >
               <ExternalLink className="w-5 h-5" />
               View Live
+            </a>
+          )}
+          {project.resume && (
+            <a
+            href={project.resume}
+              target="_blank"
+              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              <Files className="w-5 h-5" />
+              Take a look at my resume
             </a>
           )}
         </div>

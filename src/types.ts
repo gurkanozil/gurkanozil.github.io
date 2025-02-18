@@ -2,10 +2,11 @@ export interface Project {
   id: number;
   title: string;
   description: string;
-  github: string;
+  github?: string;
   liveLink?: string;
   technologies: string[];
   image?: string;
+  resume?: string;
 }
 
 export interface SocialLink {
