@@ -36,7 +36,7 @@ function App() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div className="relative w-64 h-64 mx-auto mb-16 transform transition-transform duration-300 hover:scale-125">
+          <div className="relative w-64 h-64 mx-auto my-8 transition-transform duration-300 hover:scale-110">
             <img
               src={headsign}
               alt="Profile"
@@ -56,7 +56,8 @@ function App() {
             Welcome to my portfolio! <br />
             Passion for programming since 10 y/o. <br />
             5 years of professional experience. <br />
-            Created solutions for diverse businesses, from e-commerce platforms to custom internal software that drives efficiency. <br />
+            Created solutions for diverse businesses. <br />
+            From e-commerce platforms to custom internal software that drives efficiency. <br />
             Scroll down to learn more or contact me through one of these!
           </p>
           <div className="flex justify-center gap-10 md:gap-16 mb-12">
