@@ -1,3 +1,4 @@
+import { Sparkles } from "./components/Sparkles";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { ThemeToggle } from "./components/ThemeToggle";
@@ -14,8 +15,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
+        <Sparkles
+        className="absolute inset-0"
+        color="#ffffff"
+        background="transparent"
+        size={3}
+        density={50}
+        speed={1}
+        opacity={0.8}
+      />
       <ThemeToggle />
-
       {/* Hero Section */}
       <section className="min-h-screen shadow-2xl flex flex-col items-center justify-center px-4">
         <motion.div
