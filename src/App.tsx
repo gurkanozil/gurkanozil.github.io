@@ -17,7 +17,7 @@ function App() {
       <ThemeToggle />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-4">
+      <section className="min-h-screen shadow-2xl flex flex-col items-center justify-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,16 +28,16 @@ function App() {
             <img
               src={headsign}
               alt="Profile"
-              className="rounded-full w-full h-full object-cover border-4 border-emerald-400 dark:border-emerald-500"
+              className="rounded-full w-full h-full object-cover border-2 border-emerald-400 dark:border-emerald-500"
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Gürkan Mahmut Özil
           </h1>
-          <p className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-2">
+          <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-200 mb-2">
             Full Stack Developer
           </p>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-8">
             Welcome to my portfolio! <br />
             I've been programming since 10 years old. <br />
             Scroll down to learn more or contact me through one of these!
@@ -47,13 +47,13 @@ function App() {
               href="https://linkedin.com/in/gurkanozil"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-200 hover:scale-125"
             >
               <Linkedin className="w-10 h-10 md:w-12 md:h-12" />
             </a>
             <a
               href="mailto:gurkanozil@live.nl"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-200 hover:scale-125"
             >
               <Mail className="w-10 h-10 md:w-12 md:h-12" />
             </a>
@@ -61,17 +61,17 @@ function App() {
               href="https://github.com/gurkanozil"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-200 hover:scale-125"
             >
               <Github className="w-10 h-10 md:w-12 md:h-12" />
             </a>
           </div>
           <button
             onClick={scrollToProjects}
-            className="animate-bounce"
+            className="motion-safe:animate-bounce"
             aria-label="Scroll to projects"
           >
-            <ChevronDown className="w-8 h-8" />
+            <ChevronDown className="w-16 h-16" />
           </button>
         </motion.div>
       </section>

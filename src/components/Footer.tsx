@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="py-4 text-center bg-gray-200 dark:bg-gray-800">
-      <p className="text-gray-800 dark:text-gray-200 justify-center">
+      <p className="text-gray-800 text-xl dark:text-gray-200 justify-center">
         &copy; {currentYear}
         <img
           className="h-10 px-2 inline dark:hidden"
