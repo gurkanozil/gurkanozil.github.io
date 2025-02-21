@@ -4,6 +4,7 @@ import { useTheme } from "../hooks/useTheme";
 
 export const ThemeToggle: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
+  const isDark = theme === "dark";
 
   return (
     <button
@@ -13,20 +14,14 @@ export const ThemeToggle: React.FC = () => {
     >
       <div className="relative w-full h-full">
         <Sun
-          className={`absolute inset-0 transform transition-all duration-200 
-            ${
-              theme === "dark" ? "rotate-0 opacity-100" : "rotate-90 opacity-0"
-            } 
-            text-slate-300`}
+          className={`${
+            isDark ? "opacity-0" : "opacity-100"
+          } absolute inset-0 text-slate-700 transition-opacity duration-200`}
         />
         <Moon
-          className={`absolute inset-0 transform transition-all duration-200 
-            ${
-              theme === "light"
-                ? "rotate-0 opacity-100"
-                : "-rotate-90 opacity-0"
-            } 
-            text-slate-700`}
+          className={`${
+            isDark ? "opacity-100" : "opacity-0"
+          } absolute inset-0 text-slate-300 transition-opacity duration-200`}
         />
       </div>
     </button>

@@ -8,34 +8,25 @@ import gm_green from "../images/gmgreen.png";
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const { theme } = useTheme();
+  const logo = theme === "dark" ? gm_white : gm_green;
+  const logoClassName =
+    theme === "dark" ? "hidden dark:inline" : "inline dark:hidden";
 
   return (
     <footer className="py-4 text-center bg-gray-200 dark:bg-gray-800">
-      {theme === "dark" ? (
-        <Sparkles
-          className="h-10 absolute inset-x-0 opacity-100"
-          color="#FFFFFF"
-          density={1000}
-        />
-      ) : (
-        <Sparkles
-          className="h-10 absolute inset-x-0 opacity=100"
-          color="#000000"
-          density={500}
-        />
-      )}
+      <Sparkles
+        className="h-10 absolute inset-x-0 opacity-100"
+        color={theme === "dark" ? "#FFFFFF" : "#000000"}
+        density={theme === "dark" ? 1000 : 500}
+      />
       <p className="text-gray-800 text-xl md:text-2xl dark:text-gray-200 justify-center">
-        &copy; {currentYear}
+        &copy; {currentYear}{" "}
         <img
-          className="h-12 md:h-16 p-2 inline dark:hidden"
+          className={`h-12 md:h-16 pt-1 p-2 ${logoClassName}`}
           alt="logo"
-          src={gm_green}
-        />
-        <img
-          className="h-12 md:h-16 p-2 hidden dark:inline"
-          alt="logo"
-          src={gm_white}
-        />Özil
+          src={logo}
+        />{" "}
+        Özil
       </p>
     </footer>
   );

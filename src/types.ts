@@ -5,12 +5,11 @@ export interface Project {
   github?: string;
   liveLink?: string;
   technologies: string[];
-  image?: string;
-  resume?: string;
+  image?: string | null;
+  resume?: string | null;
 }
 
 export interface SocialLink {
-  name: string;
-  url: string;
-  icon: string;
+  href: string;
+  icon: React.ReactElement;
 }

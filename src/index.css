@@ -6,36 +6,27 @@
   html {
     scroll-behavior: smooth;
   }
+  body {
+    @apply antialiased;
+  }
+  /* Hide scrollbar for all elements */
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  *::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 }
 
-body {
-  @apply antialiased;
-}
-
-/* Hide scrollbar for all elements */
-* {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer and Edge */
-}
-
-*::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-}
-
-/* Add this after your existing styles */
 :root {
   --transition-duration: 200ms;
 }
 
 .theme-transitioning * {
-  transition: background-color var(--transition-duration) ease-in-out,
-    color var(--transition-duration) ease-in-out,
-    border-color var(--transition-duration) ease-in-out,
-    fill var(--transition-duration) ease-in-out,
-    stroke var(--transition-duration) ease-in-out;
+  transition: background-color var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out, border-color var(--transition-duration) ease-in-out, fill var(--transition-duration) ease-in-out, stroke var(--transition-duration) ease-in-out;
 }
 
-/* Add after your existing styles */
 @keyframes iconSlideIn {
   0% {
     opacity: 0;

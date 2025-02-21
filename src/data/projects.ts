@@ -19,31 +19,26 @@ export const projects: Project[] = [
     id: 1,
     title: "Digital Designer Portfolio",
     description:
-      "This website was designed by Rana Kaya in Figma and developed by me using React.js and TailwindCSS.",
+      "This website was designed by Rana Kaya in Figma and developed by me. It currently serves as her portfolio and online resume. The code is shared with her permission.",
     github: "https://github.com/gurkanozil/ranakaya",
     liveLink: "https://ranakaya.vercel.app/",
-    technologies: [
-      "Figma",
-      "React",
-      "TailwindCSS",
-      "Vite",
-    ],
+    technologies: ["Figma", "React", "TailwindCSS", "Vite"],
     image: RanaKaya,
   },
   {
     id: 2,
     title: "Badger2040 GM_OS",
     description:
-      "The Badger2040 is a microcontroller with an e-ink display, based on the RP2040 microchip. In this project i decided to code some custom applications.",
+      "The Badger2040 is a microcontroller with an e-ink display, based on the RP2040 microchip. In this project i decided to code some custom applications for it. More info on github",
     github: "https://github.com/gurkanozil/Badger2040",
-    technologies: ["MicroPython", "IoT"],
+    technologies: ["MicroPython", "IoT", "Embedded"],
     image: badger_os,
   },
   {
     id: 3,
     title: "Cat mobile app",
     description:
-      "A mobile app with animations of our two cats, Huzur and Zeytin.",
+      "A mobile app with animations of our two cats, Huzur and Zeytin. This was my first experience with React Native. A live 'snack' is viewable on the link below.",
     github: "https://github.com/gurkanozil/Cat-showcase-mobile-app",
     liveLink: "https://snack.expo.dev/@gurkanozil/cat-showcase-app",
     technologies: ["React Native", "TypeScript", "Expo"],
@@ -53,7 +48,7 @@ export const projects: Project[] = [
     id: 4,
     title: "Tire inventory",
     description:
-      "With user authentication, a basic database inventory webApp to keep track of tires.",
+      "With user authentication, a basic database inventory web app to keep track of tires. This was my first experience with a serverless database like Google's FireBase and FireStore.",
     github: "https://github.com/gurkanozil/tire-inventory",
     liveLink: "https://gurkanozil.github.io/tire-inventory",
     technologies: ["Vite", "React", "Typescript", "FireBase / FireStore"],
@@ -65,9 +60,11 @@ export const projects: Project[] = [
     description:
       "Not all of my projects are shared online or finished. \n Contact me if you want to learn more or if you have something in mind!",
     technologies: [
-      "TypeScript",
-      "JavaScript",
-      "PHP",
+      "TypeScript/JavaScript",
+      "React.js",
+      "Angular",
+      "Vue.js",
+      "PHP/Laravel",
       "And more",
       "(With or without frameworks)",
     ],

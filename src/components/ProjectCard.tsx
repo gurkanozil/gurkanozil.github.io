@@ -8,6 +8,8 @@ interface ProjectCardProps {
   index: number;
 }
 
+const linkStyles = "inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 transform duration-200 hover:scale-110 dark:hover:text-emerald-400 hover:text-emerald-400 hover:underline";
+
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <motion.div
@@ -24,63 +26,38 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         />
       )}
       <div className="p-6">
-        {project.liveLink ? (
-          <a
-            href={project.liveLink}
-            className="text-xl font-bold mb-2 text-gray-900 dark:text-white"
-          >
+        <h3 className={`text-xl font-bold mb-2 text-gray-900 dark:text-white ${project.liveLink ? 'cursor-pointer' : ''}`}>
+          <a href={project.liveLink} className={project.liveLink ? '' : 'text-gray-900 dark:text-white'}>
             {project.title}
           </a>
-        ) : (
-          <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-            {project.title}
-          </h3>
-        )}
+        </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
           {project.description}
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.technologies &&
-            project.technologies.length > 0 &&
-            project.technologies.map((tech) => (
-              <span
-                key={tech}
-                className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm text-gray-700 dark:text-gray-300"
-              >
+        {project.technologies && project.technologies.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.technologies.map((tech) => (
+              <span key={tech} className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm text-gray-700 dark:text-gray-300">
                 {tech}
               </span>
             ))}
-        </div>
-
+          </div>
+        )}
         <div className="flex gap-3 m-3 text-xl md:text-lg">
           {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
-            >
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className={linkStyles}>
               <Github className="w-5 h-5" />
               View on GitHub
             </a>
           )}
           {project.liveLink && (
-            <a
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
-            >
+            <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className={linkStyles}>
               <ExternalLink className="w-5 h-5" />
               View Live
             </a>
           )}
           {project.resume && (
-            <a
-            href={project.resume}
-              target="_blank"
-              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
-            >
+            <a href={project.resume} target="_blank" className={linkStyles}>
               <Files className="w-5 h-5" />
               Take a look at my resume
             </a>
