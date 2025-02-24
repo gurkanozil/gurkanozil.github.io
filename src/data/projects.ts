@@ -18,10 +18,10 @@ import crossy_roads from "../images/crossy-roads.png";
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Crossy Roads Game with Three.js",
+    title: "Crossy Road Game with Three.js",
     description:
-      "Currently only works in dev environment! Basic Crossy Roads Game with tutorial from https://javascriptgametutorials.com/tutorials/three-js/crossy-road/",
-    github: "https://github.com/gurkanozil/crossy-roads-game",
+      "Currently only works in dev environment! Basic Crossy Road Game clone.",
+    github: "https://github.com/gurkanozil/crossy-road-game",
     technologies: ["Vite", "Typescript", "Three.js"],
     image: crossy_roads,
   },
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "With user authentication, a basic database inventory web app to keep track of tires. This was my first experience with a serverless database like Google's FireBase and FireStore.",
     github: "https://github.com/gurkanozil/tire-inventory",
     liveLink: "https://gurkanozil.github.io/tire-inventory",
-    technologies: ["Vite", "React", "Typescript", "FireBase / FireStore"],
+    technologies: ["Typescript", "FireBase / FireStore"],
     image: tire_inventory,
   },
   {
