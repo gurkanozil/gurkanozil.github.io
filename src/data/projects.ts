@@ -1,5 +1,5 @@
 import { Project } from "../types";
-import resume from "../../cv.pdf";
+//import resume from "../../cv.pdf";
 
 import RanaKaya from "../images/ranakaya_portfolio.png";
 import badger_os from "../images/badger_os.png";
@@ -78,6 +78,6 @@ export const projects: Project[] = [
       "And more",
       "(With or without frameworks)",
     ],
-    resume: resume,
+    //resume: resume,
   },
 ];
