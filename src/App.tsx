@@ -10,9 +10,23 @@ import Footer from "./components/Footer";
 
 import headsign from "./images/headsign_green.png";
 
+import {
+  SiTypescript,
+  SiJavascript,
+  SiNodedotjs,
+  SiAngular,
+  SiReact,
+  SiVuedotjs,
+  SiPostgresql,
+  SiLaravel,
+  SiHtml5,
+  SiTailwindcss,
+  SiLinux,
+  SiGit,
+} from "react-icons/si";
+
 function App() {
   const { theme } = useTheme();
-  // Removed unnecessary useEffect hook
   const scrollToElement = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -24,6 +38,11 @@ function App() {
       onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
     },
     { id: "bio", label: "About", onClick: () => scrollToElement("bio") },
+    {
+      id: "skills",
+      label: "Skills",
+      onClick: () => scrollToElement("skills"),
+    },
     {
       id: "projects",
       label: "Projects",
@@ -46,18 +65,36 @@ function App() {
     },
   ];
 
+  const skillsData = [
+    { name: "TypeScript", level: 85, icon: SiTypescript },
+    { name: "JavaScript", level: 85, icon: SiJavascript },
+    { name: "Node.js", level: 75, icon: SiNodedotjs },
+    { name: "Angular", level: 50, icon: SiAngular },
+    { name: "React", level: 80, icon: SiReact },
+    { name: "Vue.js", level: 60, icon: SiVuedotjs },
+    { name: "(Postgre)SQL", level: 70, icon: SiPostgresql },
+    { name: "PHP/Laravel", level: 65, icon: SiLaravel },
+    { name: "HTML5", level: 95, icon: SiHtml5 },
+    { name: "(Tailwind) CSS", level: 90, icon: SiTailwindcss },
+    { name: "Git(Hub)", level: 80, icon: SiGit },
+    { name: "Linux/Bash", level: 75, icon: SiLinux },
+  ];
+
   return (
     <div className="min-h-dvh bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
-      <Sparkles
-        className="absolute inset-0"
-        color={theme === "dark" ? "#FFFFFF" : "#000000"}
-        opacity={theme === "dark" ? 0.5 : 1}
-      />
-
-      <SideNav items={navItems} />
       <ThemeToggle />
+      <SideNav items={navItems} />
       {/* Hero Section */}
-      <section id="hero" className="min-h-dvh shadow-2xl flex flex-col px-2">
+      <section
+        id="hero"
+        className="relative min-h-dvh shadow-2xl flex flex-col px-2"
+      >
+        <Sparkles
+          className="absolute inset-0"
+          color={theme === "dark" ? "#FFFFFF" : "#000000"}
+          opacity={theme === "dark" ? 0.5 : 1}
+        />
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -114,10 +151,7 @@ function App() {
       </section>
 
       {/* Bio Section */}
-      <section
-        id="bio"
-        className="min-h-dvh py-20 px-4 md:px-8 bg-gray-100 dark:bg-gray-800 shadow-2xl"
-      >
+      <section id="bio" className="min-h-dvh py-20 px-4 md:px-8 shadow-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -227,7 +261,76 @@ function App() {
           </div>
         </motion.div>
 
-        <div className="flex justify-center p-12">
+        <motion.div className="flex justify-center p-12">
+          <button
+            onClick={() => scrollToElement("skills")}
+            className="motion-safe:animate-bounce"
+            aria-label="Scroll to Skills"
+          >
+            <ChevronDown className="w-16 h-16" />
+          </button>
+        </motion.div>
+      </section>
+
+      {/* Skills Section */}
+      <section
+        id="skills"
+        className="relative min-h-dvh py-20 px-4 md:px-8 shadow-2xl"
+      >
+        <Sparkles
+          className="absolute inset-0"
+          color={theme === "dark" ? "#FFFFFF" : "#000000"}
+          opacity={theme === "dark" ? 0.5 : 1}
+        />
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-4xl mx-auto relative"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Skills
+          </h2>
+
+          <div className="space-y-6 text-gray-700 dark:text-gray-300">
+            <motion.p
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-lg md:text-2xl text-center"
+            >
+              Here are some of the languages and technologies I'm experienced
+              in, and I always want to learn more:
+            </motion.p>
+            <div className="md:grid md:grid-cols-3 md:gap-16 gap-4 grid-cols-1">
+              {skillsData.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  className="relative group py-4 px-12 md:px-0"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+                >
+                  <div className="flex items-center space-x-4">
+                    <skill.icon className="w-10 h-10" />
+                    <span className="text-2xl md:text-3xl">{skill.name}</span>
+                  </div>
+                  <div className="md:absolute -bottom-6 left-0 w-full h-2 dark:bg-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:block">
+                    <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                      <div
+                        className="bg-emerald-500 h-2 rounded-full"
+                        style={{ width: `${skill.level}%` }}
+                      />
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div className="flex justify-center p-12">
           <button
             onClick={() => scrollToElement("projects")}
             className="motion-safe:animate-bounce"
@@ -235,7 +338,7 @@ function App() {
           >
             <ChevronDown className="w-16 h-16" />
           </button>
-        </div>
+        </motion.div>
       </section>
 
       {/* Projects Section */}
@@ -249,7 +352,7 @@ function App() {
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold text-center mb-12"
         >
-          My Projects
+          My (Personal) Projects
         </motion.h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
