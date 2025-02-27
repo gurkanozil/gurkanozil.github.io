@@ -8,7 +8,7 @@ import { ProjectCard } from "./components/ProjectCard";
 import { projects } from "./data/projects";
 import Footer from "./components/Footer";
 
-import headsign from "./images/headsign_green.png";
+import headsign from "./images/headsign_green.webp";
 
 import {
   SiTypescript,
@@ -54,14 +54,17 @@ function App() {
     {
       href: "https://linkedin.com/in/gurkanozil",
       icon: <Linkedin className="w-10 h-10 md:w-12 md:h-12" />,
+      label: "LinkedIn Profile",
     },
     {
       href: "mailto:gurkanozil@live.nl",
       icon: <Mail className="w-10 h-10 md:w-12 md:h-12" />,
+      label: "Send Email",
     },
     {
       href: "https://github.com/gurkanozil",
       icon: <Github className="w-10 h-10 md:w-12 md:h-12" />,
+      label: "GitHub Profile",
     },
   ];
 
@@ -135,6 +138,7 @@ function App() {
                 }
                 className="text-gray-600 dark:text-gray-300 hover:text-emerald-400 dark:hover:text-emerald-400 transition-transform duration-200 hover:scale-125"
                 key={link.href}
+                aria-label={link.label}
               >
                 {link.icon}
               </a>

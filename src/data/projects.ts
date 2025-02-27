@@ -1,11 +1,11 @@
 import { Project } from "../types";
 //import resume from "../../cv.pdf";
 
-import RanaKaya from "../images/ranakaya_portfolio.png";
-import badger_os from "../images/badger_os.png";
-import cat_app from "../images/cat_app.png";
-import tire_inventory from "../images/tire_inventory.png";
-import crossy_roads from "../images/crossy-roads.png";
+import RanaKaya from "../images/ranakaya_portfolio.webp";
+import badger_os from "../images/badger_os.webp";
+import cat_app from "../images/cat_app.webp";
+import tire_inventory from "../images/tire_inventory.webp";
+import crossy_roads from "../images/crossy-roads.webp";
 
 // id: num; // order of projects, unique
 // title: "string",

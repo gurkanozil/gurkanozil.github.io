@@ -20,17 +20,19 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
     >
       {project.image && (
         <div className="relative group md:group-hover:cursor-zoom-in">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full max-h-48 object-cover transition-transform group-hover:scale-105 duration-300 cursor-zoom-in md:cursor-pointer"
-            onClick={() => setIsImageModalOpen(true)}
-          />
           <button
             onClick={() => setIsImageModalOpen(true)}
-            className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors md:opacity-100 opacity-0"
+            className="relative group w-full max-h-48"
+            aria-label={`View ${project.title} image in full screen`}
           >
-            <Maximize2 className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-75 group-hover:scale-100" />
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full max-h-48 object-cover transition-transform group-hover:scale-105 duration-300 md:cursor-pointer"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors md:opacity-100 opacity-0">
+              <Maximize2 className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-75 group-hover:scale-100" />
+            </div>
           </button>
         </div>
       )}

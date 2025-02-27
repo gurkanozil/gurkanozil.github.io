@@ -2,8 +2,8 @@ import React from "react";
 import { useTheme } from "../hooks/useTheme";
 import { Sparkles } from "../components/Sparkles";
 
-import gm_white from "../images/gmwhite.png";
-import gm_green from "../images/gmgreen.png";
+import gm_white from "../images/gmwhite.webp";
+import gm_green from "../images/gmgreen.webp";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
