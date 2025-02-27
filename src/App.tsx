@@ -7,9 +7,7 @@ import { SideNav } from "./components/SideNav";
 import { ProjectCard } from "./components/ProjectCard";
 import { projects } from "./data/projects";
 import Footer from "./components/Footer";
-
 import headsign from "./images/headsign_green.webp";
-
 import {
   SiTypescript,
   SiJavascript,
@@ -53,17 +51,29 @@ function App() {
   const socialLinks = [
     {
       href: "https://linkedin.com/in/gurkanozil",
-      icon: <Linkedin className="w-10 h-10 md:w-12 md:h-12" />,
+      icon: (
+        <Linkedin
+          className="w-10 h-10 md:w-12 md:h-12"
+          aria-label="LinkedIn Profile"
+        />
+      ),
       label: "LinkedIn Profile",
     },
     {
       href: "mailto:gurkanozil@live.nl",
-      icon: <Mail className="w-10 h-10 md:w-12 md:h-12" />,
+      icon: (
+        <Mail className="w-10 h-10 md:w-12 md:h-12" aria-label="Send Email" />
+      ),
       label: "Send Email",
     },
     {
       href: "https://github.com/gurkanozil",
-      icon: <Github className="w-10 h-10 md:w-12 md:h-12" />,
+      icon: (
+        <Github
+          className="w-10 h-10 md:w-12 md:h-12"
+          aria-label="GitHub Profile"
+        />
+      ),
       label: "GitHub Profile",
     },
   ];
@@ -107,7 +117,7 @@ function App() {
           <div className="relative w-64 h-64 mx-auto my-8 transition-transform duration-300 hover:scale-110">
             <img
               src={headsign}
-              alt="Profile"
+              alt="Gürkan Mahmut Özil - Profile"
               className="rounded-full w-full h-full object-cover border-2 border-emerald-400 dark:border-emerald-600"
             />
           </div>
@@ -147,7 +157,7 @@ function App() {
           <button
             onClick={() => scrollToElement("bio")}
             className="motion-safe:animate-bounce"
-            aria-label="Scroll to Bio"
+            aria-label="Scroll to About Me section"
           >
             <ChevronDown className="w-16 h-16" />
           </button>
@@ -212,6 +222,7 @@ function App() {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -244,6 +255,7 @@ function App() {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -269,7 +281,7 @@ function App() {
           <button
             onClick={() => scrollToElement("skills")}
             className="motion-safe:animate-bounce"
-            aria-label="Scroll to Skills"
+            aria-label="Scroll to Skills section"
           >
             <ChevronDown className="w-16 h-16" />
           </button>
@@ -338,7 +350,7 @@ function App() {
           <button
             onClick={() => scrollToElement("projects")}
             className="motion-safe:animate-bounce"
-            aria-label="Scroll to Projects"
+            aria-label="Scroll to Projects section"
           >
             <ChevronDown className="w-16 h-16" />
           </button>

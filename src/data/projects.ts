@@ -1,5 +1,4 @@
 import { Project } from "../types";
-//import resume from "../../cv.pdf";
 
 import RanaKaya from "../images/ranakaya_portfolio.webp";
 import badger_os from "../images/badger_os.webp";
@@ -7,20 +6,12 @@ import cat_app from "../images/cat_app.webp";
 import tire_inventory from "../images/tire_inventory.webp";
 import crossy_roads from "../images/crossy-roads.webp";
 
-// id: num; // order of projects, unique
-// title: "string",
-// description: "string",
-// github: "url", // optional
-// liveLink: "url", // optional
-// technologies: ["array", "with", "tech"], // optional
-// image: "url" // optional
-
 export const projects: Project[] = [
   {
     id: 1,
     title: "Crossy Road Game with Three.js",
     description:
-      "Currently only works in dev environment! Basic Crossy Road Game clone.",
+      "Basic Crossy Road Game clone built with Three.js. Currently optimized for development environment.",
     github: "https://github.com/gurkanozil/crossy-road-game",
     technologies: ["Vite", "Typescript", "Three.js"],
     image: crossy_roads,
@@ -29,7 +20,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Digital Designer Portfolio",
     description:
-      "This website was designed by Rana Kaya in Figma and developed by me. It currently serves as her portfolio and online resume. The code is shared with her permission.",
+      "Portfolio website for Digital Designer Rana Kaya, developed using React and TailwindCSS. Showcases her design skills and online resume.",
     github: "https://github.com/gurkanozil/ranakaya",
     liveLink: "https://ranakaya.vercel.app/",
     technologies: ["Figma", "React", "TailwindCSS", "Vite"],
@@ -37,28 +28,33 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Badger2040 GM_OS",
+    title: "Badger2040 Custom OS",
     description:
-      "The Badger2040 is a microcontroller with an e-ink display, based on the RP2040 microchip. In this project i decided to code some custom applications for it. More info on github",
+      "Custom applications for the Badger2040, a microcontroller with an e-ink display based on the RP2040. Demonstrates embedded systems and IoT development skills.",
     github: "https://github.com/gurkanozil/Badger2040",
-    technologies: ["MicroPython", "IoT", "Embedded"],
+    technologies: ["MicroPython", "IoT", "Embedded Systems", "RP2040"],
     image: badger_os,
   },
   {
     id: 4,
-    title: "Cat mobile app",
+    title: "Interactive Cat Showcase Mobile App",
     description:
-      "A mobile app with animations of our two cats, Huzur and Zeytin. This was my first experience with React Native. A live 'snack' is viewable on the link below.",
+      "Mobile app featuring animations of cats Huzur and Zeytin. Built with React Native and Expo. Demonstrates mobile app development skills.",
     github: "https://github.com/gurkanozil/Cat-showcase-mobile-app",
     liveLink: "https://snack.expo.dev/@gurkanozil/cat-showcase-app",
-    technologies: ["React Native", "TypeScript", "Expo"],
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "Mobile App Development",
+    ],
     image: cat_app,
   },
   {
     id: 5,
-    title: "Tire inventory",
+    title: "Tire Inventory Web Application",
     description:
-      "With user authentication, a basic database inventory web app to keep track of tires. This was my first experience with a serverless database like Google's FireBase and FireStore.",
+      "Web application for managing tire inventory with user authentication. Built using Firebase and Firestore, showcasing serverless database skills.",
     github: "https://github.com/gurkanozil/tire-inventory",
     liveLink: "https://gurkanozil.github.io/tire-inventory",
     technologies: ["Typescript", "FireBase / FireStore"],
@@ -66,17 +62,19 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Want to see more?",
+    title: "Explore More Projects",
     description:
-      "Not all of my projects are shared online or finished. \n Contact me if you want to learn more or if you have something in mind!",
+      "Interested in seeing more? Contact me to learn about other projects and collaborations.",
     technologies: [
-      "TypeScript/JavaScript",
+      "TypeScript",
+      "JavaScript",
       "React.js",
       "Angular",
       "Vue.js",
-      "PHP/Laravel",
+      "PHP",
+      "Laravel",
+      "Web Development",
       "And more",
-      "(With or without frameworks)",
     ],
     //resume: resume,
   },

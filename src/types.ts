@@ -12,4 +12,5 @@ export interface Project {
 export interface SocialLink {
   href: string;
   icon: React.ReactElement;
+  label: string;
 }

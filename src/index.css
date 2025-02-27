@@ -4,29 +4,40 @@
 
 @layer base {
   html {
+    /* Enables smooth scrolling for better UX */
     scroll-behavior: smooth;
   }
   body {
+    /* Applies consistent font smoothing for improved text rendering */
     @apply antialiased;
   }
-  /* Hide scrollbar for all elements */
-  * {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+
+  /* Universal scrollbar hiding */
+  ::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
   }
-  *::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+
+  * {
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
 :root {
+  /* Defines the base transition duration for theme changes */
   --transition-duration: 200ms;
 }
 
+/* Applies transitions to all properties for theme changes */
 .theme-transitioning * {
-  transition: background-color var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out, border-color var(--transition-duration) ease-in-out, fill var(--transition-duration) ease-in-out, stroke var(--transition-duration) ease-in-out;
+  transition: background-color var(--transition-duration) ease-in-out,
+    color var(--transition-duration) ease-in-out,
+    border-color var(--transition-duration) ease-in-out,
+    fill var(--transition-duration) ease-in-out,
+    stroke var(--transition-duration) ease-in-out;
 }
 
+/* Keyframes for icon sliding animations */
 @keyframes iconSlideIn {
   0% {
     opacity: 0;

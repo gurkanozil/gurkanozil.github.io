@@ -1,20 +1,28 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import React, { useCallback } from "react";
+
 interface ImageModalProps {
   isOpen: boolean;
   onClose: () => void;
   imageUrl: string;
   title: string;
 }
+
 export const ImageModal: React.FC<ImageModalProps> = ({
   isOpen,
   onClose,
   imageUrl,
   title,
 }) => {
+  // Use useCallback to memoize the onClose handler
+  const handleClose = useCallback(() => {
+    onClose();
+  }, [onClose]);
+
   return (
-    <Dialog.Root open={isOpen} onOpenChange={onClose}>
+    <Dialog.Root open={isOpen} onOpenChange={handleClose}>
       <AnimatePresence>
         {isOpen && (
           <Dialog.Portal forceMount>
@@ -24,7 +32,8 @@ export const ImageModal: React.FC<ImageModalProps> = ({
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 className="fixed inset-0 md:bg-black/50 md:backdrop-blur-sm z-50"
-                onClick={onClose}
+                onClick={handleClose}
+                aria-label="Close Overlay" // Added aria-label for accessibility
               />
             </Dialog.Overlay>
             <Dialog.Content asChild>
@@ -47,7 +56,7 @@ export const ImageModal: React.FC<ImageModalProps> = ({
               >
                 <div className="relative">
                   <button
-                    onClick={onClose}
+                    onClick={handleClose}
                     className="absolute -top-4 -right-4 p-2 rounded-full bg-gray-800/80 text-white hover:bg-gray-700/80"
                     aria-label="Close modal"
                   >
@@ -57,8 +66,14 @@ export const ImageModal: React.FC<ImageModalProps> = ({
                     src={imageUrl}
                     alt={title}
                     className="rounded-lg shadow-2xl max-w-full max-h-[85vh] object-contain"
+                    loading="lazy" // Added lazy loading for performance
                   />
-                  <p className="text-center text-white mt-2 text-lg">{title}</p>
+                  <p
+                    className="text-center text-white mt-2 text-lg"
+                    aria-live="polite"
+                  >
+                    {title}
+                  </p>
                 </div>
               </motion.div>
             </Dialog.Content>
