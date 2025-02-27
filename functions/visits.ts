@@ -9,7 +9,18 @@ const redis = new Redis({
 
 // Handler for Netlify
 export async function handler(event: any, context: any) {
-  return await handleRequest(event);
+  console.log("Netlify handler called. Event:", event); // LOG EVENT
+  const response = await handleRequest(event);
+
+  // Add CORS headers to the response
+  response.headers = {
+    ...(response.headers || {}),
+    "Access-Control-Allow-Origin": "https://gurkanozil.github.io", // SPECIFIC ORIGIN
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS", // Allowed methods
+    "Access-Control-Allow-Headers": "Content-Type", // Allowed headers
+  };
+
+  return response;
 }
 
 export default async function vercelHandler(
@@ -21,7 +32,13 @@ export default async function vercelHandler(
     body: req.body ? JSON.stringify(req.body) : null,
     headers: req.headers,
   };
+  console.log("Vercel handler called. Event:", event); // LOG EVENT
   const response = await handleRequest(event);
+
+  // Add CORS headers to the response
+  res.setHeader("Access-Control-Allow-Origin", "https://gurkanozil.github.io"); // SPECIFIC ORIGIN
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS"); // Allowed methods
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Allowed headers
 
   res.status(response.statusCode);
   if (response.headers) {
@@ -34,9 +51,11 @@ export default async function vercelHandler(
 
 async function handleRequest(event: any) {
   try {
+    console.log("handleRequest called. Event:", event); // LOG EVENT
     if (event.httpMethod === "GET") {
       // Fetch the current visit count
       let visits = await redis.get<number>("visits");
+      console.log("GET - Current visits:", visits); // LOG VISITS
 
       // If there's no visit count yet, start at zero.
       if (visits === null) {
@@ -52,6 +71,7 @@ async function handleRequest(event: any) {
     } else if (event.httpMethod === "POST") {
       // Increment visit count
       const visits = await redis.incr("visits");
+      console.log("POST - Incremented visits:", visits); // LOG VISITS
 
       return {
         statusCode: 200,

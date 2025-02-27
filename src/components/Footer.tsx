@@ -16,23 +16,24 @@ const Footer: React.FC = () => {
   useEffect(() => {
     const fetchVisits = async () => {
       let baseUrl = "";
+      let functionPath = "/.netlify/functions/visits"; // Default path
 
       if (window.location.hostname.includes("github.io")) {
         baseUrl = "https://gurkanozil.netlify.app";
-      } else if (window.location.hostname.includes("netlify.app")) {
-        baseUrl = "";
       } else if (window.location.hostname.includes("vercel.app")) {
-        baseUrl = "";
+        functionPath = "/api/visits"; // Vercel path
       } else if (window.location.hostname === "localhost") {
-        baseUrl = "http://localhost:8888";
+        baseUrl = "http://localhost:5173";
       }
 
       try {
         // POST request
-        await fetch(`${baseUrl}/.netlify/functions/visits`, { method: "POST" });
+        console.log("Sending POST to:", `${baseUrl}${functionPath}`);
+        await fetch(`${baseUrl}${functionPath}`, { method: "POST" });
 
         // GET request
-        const res = await fetch(`${baseUrl}/.netlify/functions/visits`);
+        console.log("Sending GET to:", `${baseUrl}${functionPath}`);
+        const res = await fetch(`${baseUrl}${functionPath}`);
         const data = await res.json();
 
         if (data && typeof data.visits === "number") {
