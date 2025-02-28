@@ -114,7 +114,7 @@ function App() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div className="relative w-64 h-64 mx-auto my-8 transition-transform duration-300 hover:scale-110">
+          <div className="relative w-64 h-64 mx-auto my-10 transition-transform duration-300 hover:scale-110">
             <img
               src={headsign}
               alt="Gürkan Mahmut Özil - Profile"
@@ -133,7 +133,18 @@ function App() {
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-8">
             Welcome to my portfolio!
             <br />
-            Glad you came to visit.
+            Check out my{" "}
+            <a
+              href="https://gurkanozil.github.io/blog/"
+              className="text-emerald-600 dark:text-emerald-500 dark:hover:text-emerald-400 font-bold hover:text-emerald-500 transition-colors duration-200"
+              title="Read my blog posts"
+              aria-label="Read my blog posts"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              blog
+            </a>{" "}
+            when you're done!
             <br />
             <br />
             Scroll down to learn more or contact me through one of these!
@@ -183,24 +194,35 @@ function App() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg md:text-xl"
             >
-              My interest in software development began early. A childhood
-              fascination with computers, sparked by a simple interaction with
-              my father evolved into a lifelong passion.
+              My fascination with computers began in childhood and evolved into
+              a passion for software development.
               <br />
-              <br /> This passion led me to pursue a career in software
-              development, where I've gained experience in full-stack web
-              development, building numerous projects and I've become proficient
-              in both front-end and back-end technologies.
               <br />
-              <br />I am committed to continuous learning and professional
-              development within this ever-evolving field, constantly seeking
-              opportunities to enhance my skillset and broaden my knowledge
-              base.
+              I've since gained experience in full-stack web development,
+              building projects with both front-end and back-end technologies.
               <br />
-              <br />I build scalable web applications prioritizing design,
-              maintainability, and user experience. I craft responsive frontends
-              and robust backends, employing a holistic approach to my work.
+              <br />
+              I'm committed to continuous learning, always seeking to improve my
+              skills and knowledge. I focus on building scalable web
+              applications with an emphasis on design, maintainability, and user
+              experience, taking a holistic approach to crafting responsive
+              frontends and robust backends.
             </motion.p>
+
+            <div className="flex justify-center">
+              <motion.a
+                href="https://gurkanozil.github.io/blog"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-emerald-400 dark:bg-emerald-600 hover:bg-emerald-400 dark:hover:bg-emerald-500 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-300 dark:text-white shadow-xl"
+                aria-label="My Blog"
+              >
+                Read more on my Blog!
+              </motion.a>
+            </div>
 
             <motion.div
               initial={{ opacity: 0, x: -20 }}
